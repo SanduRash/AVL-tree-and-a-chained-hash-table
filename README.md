@@ -40,3 +40,7 @@ Run Instructions:
 ```bash
 ./main phones/phones100.data hash 127
 ```
+## Plots
+- Hash Table Chain Length vs. Input Size Graph:
+[Graph1](images/Graph_1_Sandu.pdf)
+- AVL Tree Height vs. Input Size Graph:
