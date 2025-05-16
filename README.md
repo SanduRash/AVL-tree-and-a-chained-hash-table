@@ -25,3 +25,18 @@ This project involves the implementation of a phonebook system using two differe
   - Get a phone number by entering a name.
   - Update the phone number for a given name.
   - Quit the program.
+ 
+## Compilation Instructions:
+Use the following command to compile the project:
+```bash
+g++ -std=c++17 -o main main.cpp 
+```
+Run Instructions:
+- For AVL Tree:
+```bash
+./main phones/phones100.data avl
+```
+- For Hash Table:
+```bash
+./main phones/phones100.data hash 127
+```
