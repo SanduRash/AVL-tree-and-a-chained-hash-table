@@ -1,0 +1,30 @@
+Sandu Galbokka Hewa
+March 27, 2025
+Project 2: Data Structures and Algorithms: Hash & AVL Trees
+Platform: Linux
+No special steps needed to compile
+No bugs
+
+First, I coded in two separate files—one for the hash table and one for the AVL tree. To implement the AVL tree, I used the code provided by Dr. Blythe. As a modification, I had to create two additional attributes:
+	string _keyData;
+	string _valueData;
+The rest of the AVL tree code is similar to Dr. Blythe's code. Then, I wrote a while loop to read the data from the file and insert it into the AVL tree. To retrieve or update someone's contact number, I called methods from the AVL tree class.
+
+	To read: myTree.find(nameToFind)->valueData()
+
+	To update: myTree.find(nameToFind)->valueData() = newContactNum;
+
+For the hash table, I first created a linkNode class with four attributes:
+
+	string _keyData = ""; // Store name
+	string _valueData = ""; // Store contact number
+	linkNode *_next = nullptr; // Point to the next node
+	int _lenOfChain = 1; // Length of each chain
+I also created a linkNode *arr with the user-defined size.
+
+I coded a function called: int findSlot(string keyData, int size); This function generates a hash value and finds the array slot where the information will be stored.
+
+I used a while loop to read the data from the file, and at the same time, it calls the findSlot function to determine the appropriate slot for storing the data. If _lenOfChain is 1, the information is stored in the array index. However, if another piece of information needs to be stored in the same slot, it works like a linked list.
+
+Once I correctly coded these two separate files, I combined them into one file.
+
